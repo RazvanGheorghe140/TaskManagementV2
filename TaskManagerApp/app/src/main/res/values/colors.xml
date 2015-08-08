@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="orange">#E65100</color>
+    <color name="teal">#009688</color>
+    <color name="blue">#2196F3</color>
+    <color name="red">#D32F2F</color>
+    <color name="green">#388E3C</color>
+    <color name="meniu">#FFC107</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="light_gray">#dbdbdb</color>
+    <color name="gray">#60000000</color>
+
+
+    <!--Fab colors-->
+    <color name="primary">#3F51B5</color>
+    <color name="primary_pressed">#303F9F</color>
+    <color name="ripple">#3949AB</color>
+    <color name="delete_primary">#F44336</color>
+    <color name="delete_primary_pressed">#D32F2F</color>
+    <color name="delete_ripple">#E53935</color>
+    <color name="edit_primary">#4CAF50</color>
+    <color name="edit_primary_pressed">#388E3C</color>
+    <color name="edit_ripple">#43A047</color>
+    <color name="info_primary">#FFEB3B</color>
+    <color name="info_primary_pressed">#FBC02D</color>
+    <color name="info_ripple">#FDD835</color>
+    
+    <color name="dark_blue_gray">#263238</color>
+    <color name="dark_red">#B71C1C</color>
+</resources>

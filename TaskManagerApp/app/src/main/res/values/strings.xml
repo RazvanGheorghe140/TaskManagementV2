@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TaskManagerApp</string>
+
+    <string name="Save">Save</string>
+    <string name="Error">Error</string>
+    <string name="FileExport">Export to file</string>
+    <string name="MailExport">Export to mail</string>
+    <string name="Complete">Complete</string>
+    <string name="ascending"><u><b>Ascending</b></u></string>
+    <string name="descending"><u><b>Descending</b></u></string>
+
+</resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:titleTextAppearance="@style/AppTheme.Toolbar.Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        />
+
+    <com.ogaclejapan.smarttablayout.SmartTabLayout
+        android:layout_below="@id/toolbar"
+        android:id="@+id/viewpagertab"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:stl_indicatorAlwaysInCenter="false"
+        app:stl_indicatorWithoutPadding="false"
+        app:stl_indicatorInFront="false"
+        app:stl_indicatorThickness="4dp"
+        app:stl_indicatorCornerRadius="2dp"
+        app:stl_indicatorColor="#fff"
+        app:stl_overlineThickness="0dp"
+        app:stl_underlineColor="#4D000000"
+        app:stl_underlineThickness="1dp"
+        app:stl_dividerColor="#4D000000"
+        app:stl_dividerThickness="1dp"
+        app:stl_defaultTabBackground="?attr/selectableItemBackground"
+        app:stl_defaultTabTextAllCaps="true"
+        app:stl_defaultTabTextColor="#fff"
+        app:stl_defaultTabTextSize="12sp"
+        app:stl_defaultTabTextHorizontalPadding="16dp"
+        app:stl_defaultTabTextMinWidth="0dp"
+        app:stl_distributeEvenly="false"
+        />
+
+    <android.support.v4.view.ViewPager
+        android:layout_below="@id/viewpagertab"
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addfab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fab:fab_colorNormal="@color/primary"
+        fab:fab_colorPressed="@color/primary_pressed"
+        fab:fab_ripple="@color/ripple"
+        android:src="@drawable/fab"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp"/>
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/fabmenu"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fab_expandDirection="up"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp">
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/editfab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/editfab"
+            fab:fab_colorNormal="@color/edit_primary"
+            fab:fab_colorPressed="@color/edit_primary_pressed"
+            fab:fab_ripple="@color/edit_ripple"/>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/deletefab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/deletefab"
+            fab:fab_colorNormal="@color/delete_primary"
+            fab:fab_colorPressed="@color/delete_primary_pressed"
+            fab:fab_ripple="@color/delete_ripple"
+            />
+
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+</RelativeLayout>

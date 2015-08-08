@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="8dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+
+
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="9dp">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/calendar_icon"
+                android:layout_margin="7dp"
+                android:layout_marginLeft="5dp"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/txtStartDate"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="right|center_vertical"
+                android:paddingBottom="5dp"
+                android:text="Start Date"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@android:color/black"
+                android:layout_gravity="center"
+                android:layout_height="40dp"
+                android:text="Pick Start Date   "
+                style="?android:attr/spinnerStyle"
+                android:id="@+id/txtStartDatePick"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/calendar_icon"
+                android:layout_margin="7dp"
+                android:layout_marginLeft="5dp"
+                android:visibility="invisible"/>
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/txtEndDate"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="0dp"
+                android:gravity="right|center_vertical"
+                android:paddingBottom="5dp"
+                android:text="End Date"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                />
+
+            <TextView
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_gravity="center"
+                android:layout_height="40dp"
+                android:textColor="@android:color/black"
+                android:text="Pick End Date   "
+                style="?android:attr/spinnerStyle"
+                android:id="@+id/txtEndDatePick"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp">
+            <com.dd.CircularProgressButton
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/file_export"
+                android:layout_width="200dp"
+                android:layout_height="55dp"
+                android:textColor="@color/cpb_white"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/file_export"
+                android:drawableLeft="@drawable/file_export"
+                app:cpb_textComplete="@string/Complete"
+                app:cpb_textError="@string/Error"
+                app:cpb_textIdle="@string/FileExport" />
+            <com.dd.CircularProgressButton
+
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/mail_export"
+                android:layout_width="200dp"
+                android:layout_height="55dp"
+                android:textColor="@color/cpb_white"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/mail_export"
+                android:drawableLeft="@drawable/mail_export"
+                app:cpb_textComplete="@string/Complete"
+                app:cpb_textError="@string/Error"
+                app:cpb_textIdle="@string/MailExport"
+               />
+        </LinearLayout>
+        </LinearLayout>
+</LinearLayout>

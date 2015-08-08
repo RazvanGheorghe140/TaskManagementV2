@@ -1,0 +1,18 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.potato.organiser">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application android:allowBackup="true" android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher" android:theme="@style/AppBaseTheme1">
+    <activity android:name="com.potato.organiser.activities.MainActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN"></action>
+            <category android:name="android.intent.category.LAUNCHER"></category>
+        </intent-filter>
+    </activity>
+        <activity android:name="com.potato.organiser.activities.AddActivity"></activity>
+    </application>
+
+</manifest>

@@ -53,9 +53,8 @@
                 android:gravity="center"
                 android:textColor="@color/white"
                 android:layout_below="@+id/type"
-                android:layout_alignStart="@+id/type"
+
                 android:layout_alignEnd="@+id/type"
-                android:layout_alignLeft="@+id/type"
                 android:layout_alignRight="@+id/type"/>
         </RelativeLayout>
 

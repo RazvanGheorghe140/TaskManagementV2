@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/splash_background"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="74dp"></View>
+            <com.rey.material.widget.EditText
+                style="@style/Material.Widget.EditText.Light"
+                android:id="@+id/user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="16dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:singleLine="true"
+                android:inputType="textCapWords"
+                android:hint="User"
+                android:imeOptions="actionNext"
+                app:et_dividerHeight="1dp"
+                app:et_dividerPadding="5dp"
+                app:et_labelPadding="5dp"
+                app:et_inputId="@+id/textfield_et_label_input"
+                app:et_supportMode="none" />
+            <com.rey.material.widget.EditText
+                style="@style/Material.Widget.EditText.Light"
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="16dp"
+                android:textSize="16sp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:hint="Password"
+                android:imeOptions="actionDone"
+                app:et_dividerHeight="1dp"
+                app:et_dividerPadding="5dp"
+                app:et_labelPadding="5dp"
+                app:et_inputId="@+id/textfield_err"
+                app:et_supportMode="helper"
+                app:et_error="Wrong password!"
+                app:et_supportTextErrorColor="@color/error"
+                app:et_dividerErrorColor="@color/error"/>
+            <TextView
+                android:id="@+id/forgot_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="@string/forgot_password"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal|bottom"
+                android:padding="8dp"
+                android:clickable="true"
+               android:textSize="14sp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp">
+                <com.rey.material.widget.CheckBox
+                    android:id="@+id/remember"
+                    style="@style/Material.Drawable.CheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="8dp"
+                    android:paddingLeft="8dp"
+                    android:text="Remember account information"
+                    android:textSize="14sp"
+                    android:gravity="center_vertical"
+                    android:checked="false"
+                    app:cbd_strokeSize="1dp" />
+            </RelativeLayout>
+            <com.rey.material.widget.Button
+                style="@style/Material.Drawable.Ripple"
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/login_button"
+                android:text="Login"
+                android:drawableLeft="@drawable/login_icon"
+                android:paddingLeft="16dp"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Button"
+                app:rd_delayClick="afterRelease" />
+            <com.rey.material.widget.Button
+                style="@style/Material.Drawable.Ripple"
+                android:id="@+id/facebook_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/facebook_login"
+                android:text="Login with Facebook"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:paddingLeft="16dp"
+                android:drawableLeft="@drawable/facebook_icon"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Button"
+                app:rd_delayClick="afterRelease" />
+
+
+            <TextView
+                android:id="@+id/register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="@string/register"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal|bottom"
+                android:padding="8dp"
+                android:clickable="true"
+                android:textSize="14sp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="24dp"></View>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

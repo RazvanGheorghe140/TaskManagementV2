@@ -3,10 +3,14 @@
 
     <string name="Save">Save</string>
     <string name="Error">Error</string>
+    <string name="PDFExport">Export to PDF</string>
     <string name="FileExport">Export to file</string>
     <string name="MailExport">Export to mail</string>
     <string name="Complete">Complete</string>
     <string name="ascending"><u><b>Ascending</b></u></string>
     <string name="descending"><u><b>Descending</b></u></string>
+    <string name="app_id">398696106990254</string>
+    <string name="forgot_password"><u>Forgot password?</u></string>
+    <string name="register"><u>Not a member? Register now</u></string>
 
 </resources>

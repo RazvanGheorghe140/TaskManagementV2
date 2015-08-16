@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/splash_background"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:titleTextAppearance="@style/AppTheme.Toolbar.Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:background="@color/orange" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="74dp"></View>
+            <com.rey.material.widget.EditText
+                style="@style/Material.Widget.EditText.Light"
+                android:id="@+id/email_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="16dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:singleLine="true"
+                android:inputType="textEmailAddress"
+                android:hint="Email address"
+                android:imeOptions="actionNext"
+                app:et_dividerHeight="1dp"
+                app:et_dividerPadding="5dp"
+                app:et_labelPadding="5dp"
+                app:et_inputId="@+id/textfield_et_label_input"
+                app:et_supportMode="helper"
+                app:et_error="Not a valid address!"
+                app:et_supportTextErrorColor="@color/error"
+                app:et_dividerErrorColor="@color/error"/>
+            <com.rey.material.widget.EditText
+                style="@style/Material.Widget.EditText.Light"
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="16dp"
+                android:textSize="16sp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:hint="Password"
+                android:imeOptions="actionDone"
+                app:et_dividerHeight="1dp"
+                app:et_dividerPadding="5dp"
+                app:et_labelPadding="5dp"
+                app:et_inputId="@+id/textfield_password"
+                app:et_supportMode="none" />
+            <com.rey.material.widget.EditText
+                style="@style/Material.Widget.EditText.Light"
+                android:id="@+id/confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="16dp"
+                android:textSize="16sp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:hint="Confirm password"
+                android:imeOptions="actionDone"
+                app:et_dividerHeight="1dp"
+                app:et_dividerPadding="5dp"
+                app:et_labelPadding="5dp"
+                app:et_inputId="@+id/textfield_password"
+                app:et_supportMode="helper"
+                app:et_error="Password doesn't match"
+                app:et_supportTextErrorColor="@color/error"
+                app:et_dividerErrorColor="@color/error" />
+            <com.rey.material.widget.Button
+                style="@style/Material.Drawable.Ripple"
+                android:id="@+id/sign_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/sign_up"
+                android:text="Sign up"
+                android:drawableLeft="@drawable/sign_up_icon"
+                android:paddingLeft="16dp"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Button"
+                app:rd_delayClick="afterRelease" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="24dp"></View>
+            </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -57,7 +57,17 @@
                     android:textSize="16sp"
                     android:textStyle="bold"
                     android:text="Tipul evenimentului"/>
-                <Spinner
+                <!--<Spinner-->
+                    <!--android:id="@+id/spinner"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="56dp"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_alignParentTop="true"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_toEndOf="@+id/typeChoice"-->
+                    <!--android:layout_toRightOf="@+id/typeChoice"/>-->
+                <com.rey.material.widget.Spinner
+                    style="@style/Material.Widget.Spinner"
                     android:id="@+id/spinner"
                     android:layout_width="wrap_content"
                     android:layout_height="56dp"
@@ -65,7 +75,16 @@
                     android:layout_alignParentTop="true"
                     android:layout_centerHorizontal="true"
                     android:layout_toEndOf="@+id/typeChoice"
-                    android:layout_toRightOf="@+id/typeChoice"/>
+                    android:layout_toRightOf="@+id/typeChoice"
+                    app:rd_style="@style/Material.Drawable.Ripple.Wave.Light"
+                    app:spn_arrowSwitchMode="true"
+                    app:spn_arrowAnimDuration="@android:integer/config_shortAnimTime"
+                    app:spn_arrowInterpolator="@android:anim/decelerate_interpolator"
+                    app:rd_enable="true"
+                    app:rd_delayClick="none"
+                    app:spn_labelEnable="true"
+                    app:spn_labelTextColor="@color/black"
+                    app:et_dividerHeight="1dp" />
             </LinearLayout>
             <View
                 android:layout_width="match_parent"

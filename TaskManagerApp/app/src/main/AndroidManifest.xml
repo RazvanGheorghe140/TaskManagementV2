@@ -1,18 +1,35 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.potato.organiser">
+    package="com.potato.taskmanagerapp">
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
 
     <application android:allowBackup="true" android:label="@string/app_name"
         android:icon="@mipmap/ic_launcher" android:theme="@style/AppBaseTheme1">
-    <activity android:name="com.potato.organiser.activities.MainActivity">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN"></action>
-            <category android:name="android.intent.category.LAUNCHER"></category>
-        </intent-filter>
-    </activity>
-        <activity android:name="com.potato.organiser.activities.AddActivity"></activity>
+        <meta-data android:name="com.facebook.sdk.ApplicationId"   android:value="@string/app_id"/>
+        <receiver android:process=":remote" android:name="com.potato.taskmanagerapp.broadcasts.Alarm">
+        </receiver>
+        <receiver android:name=".broadcasts.AutoStart">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"></action>
+            </intent-filter>
+        </receiver>
+        <activity android:name=".activities.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"></action>
+                <category android:name="android.intent.category.LAUNCHER"></category>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activities.SplashActivity"></activity>
+        <activity android:name=".activities.SignUpActivity"></activity>
+        <activity android:name=".activities.MainActivity"></activity>
+        <activity android:name=".activities.AddActivity"></activity>
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:label="@string/app_name" />
     </application>
 
 </manifest>

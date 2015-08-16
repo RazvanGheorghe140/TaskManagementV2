@@ -26,7 +26,13 @@
     <color name="info_primary">#FFEB3B</color>
     <color name="info_primary_pressed">#FBC02D</color>
     <color name="info_ripple">#FDD835</color>
+    <color name="dark_yellow">#FDD835</color>
     
     <color name="dark_blue_gray">#263238</color>
     <color name="dark_red">#B71C1C</color>
+    <color name="splash_background">#FFECB3</color>
+    <color name="login_button">#4DC64A</color>
+    <color name="facebook_login">#3b5998</color>
+    <color name="error">#FFFF0000</color>
+    <color name="sign_up">#0095e6</color>
 </resources>

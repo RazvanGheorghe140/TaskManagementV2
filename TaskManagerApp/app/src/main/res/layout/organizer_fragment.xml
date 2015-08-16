@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Events left for today"
+                android:gravity="center"
+                android:textSize="21sp"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+            <LinearLayout
+
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp">
+                <TextView
+                    android:id="@+id/low"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:padding="8dp"
+                    android:textColor="@color/dark_yellow"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text=" events of low priority"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp">
+                <TextView
+                    android:id="@+id/medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:padding="8dp"
+                    android:textColor="@color/orange"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text=" events of medium priority"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp">
+                <TextView
+                    android:id="@+id/high"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:padding="8dp"
+                    android:textColor="@color/red"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text=" events of high priority"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Next event"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="21sp"
+                android:padding="8dp"/>
+            <RelativeLayout
+                android:background="@drawable/outline"
+                android:id="@+id/relBackground"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginLeft="7dp"
+                android:paddingBottom="20dp"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp">
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:fontFamily="sans-serif"
+                    android:singleLine="true"
+                    android:ellipsize="end" />
+                <TextView
+                    android:id="@+id/startDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:layout_below="@+id/description"/>
+                <TextView
+                    android:id="@+id/type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:singleLine="true"
+                    android:gravity="center"
+                    android:fontFamily="sans-serif"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+                <TextView
+                    android:id="@+id/priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:layout_below="@+id/type"
+
+                    android:layout_alignEnd="@+id/type"
+                    android:layout_alignRight="@+id/type"/>
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/no_events"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="There aren't any more events for today."
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:padding="8dp"
+                android:gravity="center"
+                android:visibility="gone"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Events from the last month"
+                android:textColor="@color/black"
+                android:textSize="21sp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:gravity="center"/>
+            <org.eazegraph.lib.charts.BarChart
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/barchart"
+                android:layout_width="match_parent"
+                android:layout_height="256dp"
+                android:padding="10dp"
+                app:egFixedBarWidth="true"
+                app:egBarWidth="20dp"
+                app:egLegendHeight="40dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
